@@ -28,16 +28,22 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-community-dialects</artifactId>
+            <version>6.0.0.Final</version> <!-- Asegúrate de usar la versión compatible con tu versión de Hibernate -->
+        </dependency>
+
         <!-- Thymeleaf para renderizar vistas HTML -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!-- Dependencia para trabajar con bases de datos si usas SQLite -->
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
+            <version>3.36.0.3</version> <!-- Usa la versión más reciente disponible -->
         </dependency>
 
         <!-- Spring Data JPA si estás usando repositorios -->
