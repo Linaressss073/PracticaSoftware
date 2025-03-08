@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Importar hoja de estilos dentro de carpeta Software -->
+        <link rel="stylesheet" th:href="@{/styles.css}">
+
+        <title>Registro de Usuarios</title>
+    </head>
+    <body>
+
+    <form action="#" th:action="@{/registro}" th:object="${usuario}" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" th:field="*{nombre}" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" th:field="*{email}" required>
+        </div>
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" th:field="*{password}" required>
+        </div>
+        <div>
+            <button type="submit">Registrar</button>
+        </div>
+    </form>
+    </body>
+</html>
