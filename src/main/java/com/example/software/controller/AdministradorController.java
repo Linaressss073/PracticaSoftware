@@ -1,5 +1,5 @@
 package com.example.software.controller;
-
+//Admin controller
 import com.example.software.model.Administrador;
 import com.example.software.service.AdministradorServicio;
 import org.springframework.beans.factory.annotation.Autowired;
