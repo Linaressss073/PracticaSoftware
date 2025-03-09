@@ -50,3 +50,23 @@ button {
 button:hover {
     opacity: 0.8;
 }
+.layout > div {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    text-align: center;
+    justify-content: space-between;
+}
+
+.grow1 { flex-grow: 1; }
+
+.registro-btn{
+    display: flex;
+    flex-direction: column;
+    gap: normal;
+
+    justify-content: space-around;
+}

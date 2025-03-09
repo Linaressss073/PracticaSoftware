@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Importar hoja de estilos dentro de carpeta Software -->
-    <link rel="stylesheet" th:href="@{/styles.css}">
+        <!-- Importar hoja de estilos dentro de carpeta Software -->
+        <link rel="stylesheet" th:href="@{/styles.css}">
 
-    <title>Página de inicio de sesión</title>
-</head>
+        <title>Página de inicio de sesión</title>
+    </head>
 
-<body>
-<div class="login-container">
-    <h2>Iniciar Sesión</h2>
+    <body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
 
-    <!-- Formulario de inicio de sesión -->
-    <form th:action="@{/login}" method="post">
-        <input type="email" name="email" placeholder="Correo electrónico" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit" class="login-btn">Ingresar</button>
-    </form>
+        <!-- Formulario de inicio de sesión -->
+        <form th:action="@{/login}" method="post">
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit" class="login-btn">Ingresar</button>
+        </form>
 
-    <!-- Botón para recuperar contraseña -->
-    <button class="forgot-btn">Olvidé mi contraseña</button>
+        <!-- Botón para recuperar contraseña -->
+        <button class="forgot-btn">Olvidé mi contraseña</button>
 
-    <!-- Mostrar mensaje de error si las credenciales son incorrectas -->
-    <div th:if="${error}" style="color: red; margin-top: 10px;">
-        <p th:text="${error}"></p>
+        <div class="registro-btn">
+            <br>
+            <a href="/registro">Registrarse</a> <!---Registrarse en la pagina -->
+        </div>
+
+        <!-- Mostrar mensaje de error si las credenciales son incorrectas -->
+        <div th:if="${error}" style="color: red; margin-top: 10px;">
+            <p th:text="${error}"></p>
+        </div>
     </div>
-</div>
-</body>
+
+
+
+
+    </body>
 </html>
