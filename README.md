@@ -1,7 +1,5 @@
 # Proyecto Spring Boot con HTML y CSS
 
-![Logo o imagen representativa](https://via.placeholder.com/150) <!-- Opcional: Añade un logo o imagen -->
-
 Este proyecto es una aplicación web desarrollada con **Java Spring Boot** y una interfaz de usuario construida con **HTML** y **CSS**. El objetivo principal es [describe el propósito del proyecto, por ejemplo: "gestionar usuarios y tareas de manera eficiente"].
 
 ---
@@ -11,7 +9,7 @@ Este proyecto es una aplicación web desarrollada con **Java Spring Boot** y una
 - **Gestión de Usuarios**: Registro, inicio de sesión y gestión de perfiles de usuario.
 - **CRUD de Entidades**: Crear, leer, actualizar y eliminar entidades (por ejemplo, tareas, productos, etc.).
 - **Interfaz Amigable**: Diseño responsive y fácil de usar.
-- **Base de Datos**: Almacenamiento persistente de datos utilizando [MySQL/PostgreSQL/H2].
+- **Base de Datos**: Almacenamiento persistente de datos utilizando [MySQL]
 
 ---
 
