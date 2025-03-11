@@ -31,8 +31,7 @@ El proyecto está organizado en los siguientes paquetes:
 - **Framework**: Spring Boot
 - **Base de Datos**: [MySQL]
 - **Frontend**: HTML, CSS
-- **Herramientas de Construcción**: Maven
-- **Otras Herramientas**: Thymeleaf (para integrar HTML con Spring Boot), Bootstrap (opcional, para estilos).
+- **Otras Herramientas**: Thymeleaf (para integrar HTML con Spring Boot)
 
 ---
 
