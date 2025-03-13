@@ -2,9 +2,10 @@
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="UTF-8">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
         <!-- Importar hoja de estilos dentro de carpeta Software -->
-        <link rel="stylesheet" th:href="@{/styles.css}">
+        <link rel="stylesheet" th:href="@{/registroc.css    }">
 
         <title>Registro de Usuarios</title>
     </head>
@@ -24,7 +25,7 @@
             <input type="password" id="password" th:field="*{password}" required>
         </div>
         <!--reCAPTCHA-->
-        <div class="g-recaptcha" data-sitekey="6LdLYPMqAAAAAPlPeRd1-0m0AIqOZ5MWkVwbwwJv"></div> <br><br>
+        <div class="g-recaptcha" data-sitekey="6LdLYPMqAAAAAPlPeRd1-0m0AIqOZ5MWkVwbwwJv"></div> <br>
 
         <div>
             <button type="submit">Registrar</button>

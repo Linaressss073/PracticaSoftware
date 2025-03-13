@@ -66,4 +66,7 @@ public class UsuarioController {
     public String mostrarlogout() {
         return "logout"; // Devuelve la vista logout.html
     }
+
+    @GetMapping("/interfaces")
+    public String mostrarInterfaz() {return "interfaces"; }
 }

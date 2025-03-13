@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Importar hoja de estilos dentro de carpeta Software -->
-        <link rel="stylesheet" th:href="@{/styles.css}">
+        <link rel="stylesheet" th:href="@{/login.css}">
         <!-- Agregar reCAPTCHA -->
         <script src = "https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -25,7 +25,9 @@
             <button class="forgot-btn">Olvidé mi contraseña</button>
         </form>
 
-        <button class="regist-btn">¡Registrate! <a href="registro.html"></a></button>
+        <button class="regist-btn">
+            <a href="registro">¡Registrate!</a>
+        </button>
 
         <!-- Mostrar mensaje de error si las credenciales son incorrectas -->
         <div th:if="${error}" style="color: red; margin-top: 10px;">

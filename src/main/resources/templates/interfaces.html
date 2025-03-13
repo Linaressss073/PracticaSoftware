@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{interfacesc.css}">
+    <title>Interfaz de Redireccionamiento para paginas</title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a th:href="@{/login}">Login</a></li>
+        <li><a th:href="@{/logout}">Logout</a></li>
+        <li><a th:href="@{/registro}">Registro</a></li>
+        <li><a th:href="@{/dashboard}">Dashboard</a></li>
+    </ul>
+</nav>
+
+<nav>
+    <ul>
+        <li><a th:href="@{/administradores/list}">Lista admins</a></li>
+        <li><a th:href="@{/administradores/editAdmin}">Editar admins</a></li>
+        <li><a th:href="@{/administradores/newAdmin}">Nuevo admin</a></li>
+
+    </ul>
+</nav>
+
+</body>
+</html>
