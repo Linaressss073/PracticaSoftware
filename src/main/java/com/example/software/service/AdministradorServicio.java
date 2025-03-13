@@ -28,4 +28,7 @@ public class AdministradorServicio {
     public void deleteAdministrador(Long id) {
         administradorRepository.deleteById(id);
     }
+
+    public void updateAdministrador(Long id, Administrador administrador) {
+    }
 }
