@@ -6,6 +6,8 @@
 
         <!-- Importar hoja de estilos dentro de carpeta Software -->
         <link rel="stylesheet" th:href="@{/styles.css}">
+        <!-- Agregar reCAPTCHA -->
+        <script src = "https://www.google.com/recaptcha/api.js" async defer></script>
 
         <title>Página de inicio de sesión</title>
     </head>
@@ -19,15 +21,11 @@
             <input type="email" name="email" placeholder="Correo electrónico" required>
             <input type="password" name="password" placeholder="Contraseña" required>
             <button type="submit" class="login-btn">Ingresar</button>
+            <!-- Botón para recuperar contraseña -->
+            <button class="forgot-btn">Olvidé mi contraseña</button>
         </form>
 
-        <!-- Botón para recuperar contraseña -->
-        <button class="forgot-btn">Olvidé mi contraseña</button>
-
-        <div class="registro-btn">
-            <br>
-            <a href="/registro">Registrarse</a> <!---Registrarse en la pagina -->
-        </div>
+        <button class="regist-btn">¡Registrate! <a href="registro.html"></a></button>
 
         <!-- Mostrar mensaje de error si las credenciales son incorrectas -->
         <div th:if="${error}" style="color: red; margin-top: 10px;">

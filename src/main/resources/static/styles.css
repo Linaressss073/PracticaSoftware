@@ -63,10 +63,12 @@ button:hover {
 
 .grow1 { flex-grow: 1; }
 
-.registro-btn{
+.regist-btn{
     display: flex;
     flex-direction: column;
     gap: normal;
 
     justify-content: space-around;
 }
+
+.
